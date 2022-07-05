@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pruebaExcel"
+    }
+  },
+  "defaultProject": "pruebaExcel",
+  "cli": {
+    "analytics": "fbddc005-0cf4-48eb-aa05-346108998b73"
+  }
 }
