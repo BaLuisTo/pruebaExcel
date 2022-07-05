@@ -7,8 +7,7 @@ import * as XLSX from 'xlsx';
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    const workbook = XLSX.utils.table_to_book(document.getElementById("table"));
-    console.log(workbook);
+ 
     
   }
   title = 'pruebaExcel';
