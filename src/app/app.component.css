@@ -1,35 +1,204 @@
-#container{
-    width: 600px;
-    padding: 2%;
-    background-color: aquamarine;
+#contenidoPDF{
+    width: 547px;
+    height: 793px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
 }
 
-.imagenes{
-    width: 100%;
+/* header */
+.contenidoPDF__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 547px;
+    height: 58.35px;
+    left: 0px;
+    top: 0px;
+    background: #ffffff;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.contenidoPDF__header__logoI{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    padding: 0px;
+    gap: 16px;
+    width: 203.04px;
+    height: 37.51px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
 }
 
-.imagen1{
-    width: 100px;
+.contenidoPDF__header__logoI--img1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px;
+    margin: auto;
+    width: 87.94px;
+    height: 37.5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.imagen2{
-    width: 100px;
+.contenidoPDF__header__logoI--img1 img{
+    width: 80.57px;
+    height: 29.17px;
 }
 
-.parrafo{
-    padding-top: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
+.contenidoPDF__header__logoI--separador hr{
+    border:         none;
+    border-left:    1px solid #CCCCCC;
+    height:         16px;
+    width:          1px; 
 }
 
-.parrafo img{
-    width: 200px;
+.contenidoPDF__header__logoI--titulo{
+    width: 350px;
+    height: 11px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 11px;
+    color: #686868;
+    order: 2;
+    flex: none;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.parrafo1{
-    font-size: 0.5em;
+.contenidoPDF__header__logoD{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    width: 34px;
+    height: 26px;
+}
+
+.contenidoPDF__header__logoD img{
+    width: 33px;
+    height: 35.42px;
+}
+
+
+/* body */
+
+.contenidoPDF__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 23px 15px;
+    gap: 12px;
+    position: absolute;
+    width: 547px;
+    /*PROBLEMA CON LAS MEDIDAS*/
+    /* height: 659.611px; */
+    left: 0px;
+    top: 58.35px;
+}
+
+.contenidoPDF__body__informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 502.78px;
+    /*PROBLEMA CON LAS MEDIDAS*/
+    /* height: 634.6px; */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.contenidoPDF__body__informacion__expedicion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0px;
+    gap: 3px;
+    width: 500.94px;
+    height: 25.52px;
+}
+
+.contenidoPDF__body__informacion__expedicion--empresa{
+    width: 138.12px;
+    height: 8.85px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 120%;
+    color: #333333;
+}
+
+.contenidoPDF__body__informacion__expedicion--poliza{
+    width: 177.72px;
+    height: 8px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 120%;
+    color: #333333;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.contenidoPDF__body__informacion__expedicion--fechaGeneracion{
+    width: 177.72px;
+    height: 8px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 120%;
+    color: #333333;
+    flex: none;
+    order: 2;
+    flex-grow: 1;
+}
+
+
+
+/*pie de pagina*/
+
+.contenidoPDF__body__pieDePagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 7px 0px;
+    gap: 3px;
+    width: 502.78px;
+    height: 62.522px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.contenidoPDF__body__pieDePagina p{
+    width: 502.78px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 140%;
+    color: #333333;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
 }
